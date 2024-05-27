@@ -5,6 +5,7 @@ import mlflow
 
 mlflow.set_tracking_uri("sqlite:///mlflow.db")
 mlflow.set_experiment("nyc-taxi-experiment-hw2")
+mlflow.autolog()
 
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error
@@ -27,20 +28,18 @@ def run_train(data_path: str):
 
     rf = RandomForestRegressor(max_depth=10, random_state=0)
     with mlflow.start_run():
-        mlflow.set_tag("developer", "botavalo")
+        #mlflow.set_tag("developer", "botavalo")
         rf.fit(X_train, y_train)
         y_pred = rf.predict(X_val)
 
         rmse = mean_squared_error(y_val, y_pred, squared=False)
         
-        mlflow.log_metric("rmse", rmse)
-        mss = rf.min_samples_split
-        mlflow.log_param("min_samples_split",mss)   
+        #mlflow.log_metric("rmse", rmse)
+        #mss = rf.min_samples_split
+        #mlflow.log_param("min_samples_split",mss)   
     
     
 
 
 if __name__ == '__main__':
     run_train()
-    
-    
