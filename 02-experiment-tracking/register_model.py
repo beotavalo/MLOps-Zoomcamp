@@ -77,18 +77,25 @@ def run_register_model(data_path: str, top_n: int):
 
     # Select the model with the lowest test RMSE
     experiment = client.get_experiment_by_name(EXPERIMENT_NAME)
-    best_run = client.search_runs(
-        experiment_ids = '1',
-        filter_string = "metrics.test_rmse < 5.59",
-        run_view_type = ViewType.ACTIVE_ONLY,
-        max_results = 3,
-        order_by = ["metrics.test_rmse"]
-      )
-    print(best_run)
-
-    # Register the best model
-    #model_uri = f"runs:/{best_run}/model"
-    #mlflow.register_model( ... )
+    # Buscar las runs con el filtro y orden especificado
+    best_runs = client.search_runs(
+        experiment_ids=[experiment.experiment_id],  # Asegúrate de pasar el ID del experimento
+        filter_string="metrics.test_rmse < 5.59",
+        run_view_type=ViewType.ACTIVE_ONLY,
+        max_results=5,
+        order_by=["metrics.test_rmse"]
+        )
+    # Asegúrate de que has encontrado al menos una run
+    if best_runs:
+        # Seleccionar el primer run de la lista
+        best_run = best_runs[0]
+        print(best_run)
+        # Registrar el mejor modelo
+        run_id = best_run.info.run_id
+        model_uri = f"runs:/{run_id}/model"
+        mlflow.register_model(model_uri=model_uri, name='nyc-taxi-regressor')
+    else:
+        print("No suitable runs found.")
 
 
 if __name__ == '__main__':
