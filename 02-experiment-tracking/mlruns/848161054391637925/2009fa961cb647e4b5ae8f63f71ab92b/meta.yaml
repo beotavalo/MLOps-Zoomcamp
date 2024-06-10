@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/848161054391637925/2009fa961cb647e4b5ae8f63f71ab92b/artifacts
+end_time: 1717703685832
+entry_point_name: ''
+experiment_id: '848161054391637925'
+lifecycle_stage: active
+run_id: 2009fa961cb647e4b5ae8f63f71ab92b
+run_name: rambunctious-tern-45
+run_uuid: 2009fa961cb647e4b5ae8f63f71ab92b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717703685274
+status: 3
+tags: []
+user_id: codespace

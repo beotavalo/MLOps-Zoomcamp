@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/848161054391637925/f239669cd0c54f48b805142a14745230/artifacts
+end_time: 1717703712228
+entry_point_name: ''
+experiment_id: '848161054391637925'
+lifecycle_stage: active
+run_id: f239669cd0c54f48b805142a14745230
+run_name: dashing-wren-476
+run_uuid: f239669cd0c54f48b805142a14745230
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717703711274
+status: 3
+tags: []
+user_id: codespace

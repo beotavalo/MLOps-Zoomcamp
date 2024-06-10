@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/848161054391637925/6ff902f572e2446bb127c0953504b8a3/artifacts
+end_time: 1717703685267
+entry_point_name: ''
+experiment_id: '848161054391637925'
+lifecycle_stage: active
+run_id: 6ff902f572e2446bb127c0953504b8a3
+run_name: rare-rat-36
+run_uuid: 6ff902f572e2446bb127c0953504b8a3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717703684848
+status: 3
+tags: []
+user_id: codespace

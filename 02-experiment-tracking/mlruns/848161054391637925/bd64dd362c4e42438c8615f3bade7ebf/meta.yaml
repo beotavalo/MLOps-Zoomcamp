@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/848161054391637925/bd64dd362c4e42438c8615f3bade7ebf/artifacts
+end_time: 1717703717657
+entry_point_name: ''
+experiment_id: '848161054391637925'
+lifecycle_stage: active
+run_id: bd64dd362c4e42438c8615f3bade7ebf
+run_name: gifted-donkey-725
+run_uuid: bd64dd362c4e42438c8615f3bade7ebf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717703712236
+status: 3
+tags: []
+user_id: codespace

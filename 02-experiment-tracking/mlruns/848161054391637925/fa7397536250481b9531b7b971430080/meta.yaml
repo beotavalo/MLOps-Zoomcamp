@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/848161054391637925/fa7397536250481b9531b7b971430080/artifacts
+end_time: 1717703732450
+entry_point_name: ''
+experiment_id: '848161054391637925'
+lifecycle_stage: active
+run_id: fa7397536250481b9531b7b971430080
+run_name: fearless-toad-620
+run_uuid: fa7397536250481b9531b7b971430080
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717703729299
+status: 3
+tags: []
+user_id: codespace

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/848161054391637925/df6b7b037dc34170b4cbce40d2256c9d/artifacts
+end_time: 1717703711266
+entry_point_name: ''
+experiment_id: '848161054391637925'
+lifecycle_stage: active
+run_id: df6b7b037dc34170b4cbce40d2256c9d
+run_name: hilarious-skink-221
+run_uuid: df6b7b037dc34170b4cbce40d2256c9d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717703702516
+status: 3
+tags: []
+user_id: codespace

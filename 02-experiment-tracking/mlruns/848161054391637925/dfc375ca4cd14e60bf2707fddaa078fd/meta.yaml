@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/848161054391637925/dfc375ca4cd14e60bf2707fddaa078fd/artifacts
+end_time: 1717703702509
+entry_point_name: ''
+experiment_id: '848161054391637925'
+lifecycle_stage: active
+run_id: dfc375ca4cd14e60bf2707fddaa078fd
+run_name: trusting-rat-147
+run_uuid: dfc375ca4cd14e60bf2707fddaa078fd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717703693699
+status: 3
+tags: []
+user_id: codespace

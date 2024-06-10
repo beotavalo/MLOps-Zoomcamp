@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/848161054391637925/a4c3551feb2344af849ff3a104dc60c7/artifacts
+end_time: 1717703722135
+entry_point_name: ''
+experiment_id: '848161054391637925'
+lifecycle_stage: active
+run_id: a4c3551feb2344af849ff3a104dc60c7
+run_name: unruly-horse-24
+run_uuid: a4c3551feb2344af849ff3a104dc60c7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717703717665
+status: 3
+tags: []
+user_id: codespace

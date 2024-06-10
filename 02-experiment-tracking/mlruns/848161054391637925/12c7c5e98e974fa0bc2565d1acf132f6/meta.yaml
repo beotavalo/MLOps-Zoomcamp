@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/848161054391637925/12c7c5e98e974fa0bc2565d1acf132f6/artifacts
+end_time: 1717703725451
+entry_point_name: ''
+experiment_id: '848161054391637925'
+lifecycle_stage: active
+run_id: 12c7c5e98e974fa0bc2565d1acf132f6
+run_name: chill-koi-326
+run_uuid: 12c7c5e98e974fa0bc2565d1acf132f6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717703722143
+status: 3
+tags: []
+user_id: codespace

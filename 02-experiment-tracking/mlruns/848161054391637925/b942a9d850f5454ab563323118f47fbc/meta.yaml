@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/848161054391637925/b942a9d850f5454ab563323118f47fbc/artifacts
+end_time: 1717703684840
+entry_point_name: ''
+experiment_id: '848161054391637925'
+lifecycle_stage: active
+run_id: b942a9d850f5454ab563323118f47fbc
+run_name: intrigued-mink-755
+run_uuid: b942a9d850f5454ab563323118f47fbc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717703677156
+status: 3
+tags: []
+user_id: codespace

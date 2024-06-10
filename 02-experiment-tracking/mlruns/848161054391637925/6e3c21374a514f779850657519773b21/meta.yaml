@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/848161054391637925/6e3c21374a514f779850657519773b21/artifacts
+end_time: 1717703691117
+entry_point_name: ''
+experiment_id: '848161054391637925'
+lifecycle_stage: active
+run_id: 6e3c21374a514f779850657519773b21
+run_name: honorable-hog-944
+run_uuid: 6e3c21374a514f779850657519773b21
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717703685843
+status: 3
+tags: []
+user_id: codespace
