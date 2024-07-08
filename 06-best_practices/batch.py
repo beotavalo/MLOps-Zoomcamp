@@ -4,13 +4,36 @@
 import sys
 import pickle
 import pandas as pd
-
-
 year = int(sys.argv[1])
 month = int(sys.argv[2])
 
-input_file = f'https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_{year:04d}-{month:02d}.parquet'
+bucket = 'nyc-duration'
+input_key = f'in/{year:04d}-{month:02d}.parquet'
 output_file = f'output/yellow_tripdata_{year:04d}-{month:02d}.parquet'
+
+
+def read_from_s3(bucket, key):
+    options = {
+        'client_kwargs': {
+            'endpoint_url': 'http://localhost:4566',
+            'aws_access_key_id': 'test',
+            'aws_secret_access_key': 'test'
+        }
+    }
+    
+    s3_path = f"s3://{bucket}/{key}"
+    print(f"Reading data from {s3_path}")
+    df = pd.read_parquet(s3_path, storage_options=options)
+    
+    return df
+
+
+    
+# Read the data from S3
+#df = read_from_s3(bucket, input_key)
+
+#input_file = f'https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_{year:04d}-{month:02d}.parquet'
+#output_file = f'output/yellow_tripdata_{year:04d}-{month:02d}.parquet'
 
 
 with open('model.bin', 'rb') as f_in:
@@ -19,8 +42,9 @@ with open('model.bin', 'rb') as f_in:
 
 categorical = ['PULocationID', 'DOLocationID']
 
-def read_data(filename):
-    df = pd.read_parquet(filename)
+def read_data(input_key):
+    #df = pd.read_parquet(filename)
+    df = read_from_s3(bucket, input_key)
     
     df['duration'] = df.tpep_dropoff_datetime - df.tpep_pickup_datetime
     df['duration'] = df.duration.dt.total_seconds() / 60
@@ -32,7 +56,7 @@ def read_data(filename):
     return df
 
 
-df = read_data(input_file)
+df = read_data(input_key)
 df['ride_id'] = f'{year:04d}/{month:02d}_' + df.index.astype('str')
 
 
